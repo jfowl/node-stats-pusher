@@ -20,8 +20,14 @@ hearbeat()
 
 const axios = require('axios');
 
-function getRequest(url, params) {
-    return axios.get(url, {params})
+async function getRequest(url, params) {
+    try {
+        await axios.get(url, {params})
+        return true
+    } catch (e) {
+        console.error('[stats-pusher] getRequest failed. Axios error:', e)
+        return false
+    }
 }
 
 function StatsAPI(url, apiKey) {
