@@ -1,0 +1,21 @@
+{
+  "name": "stats-pusher",
+  "version": "0.1.0",
+  "description": "receives simple stats and pushes them to an http endpoint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jfowl/node-stats-pusher"
+  },
+  "keywords": [
+    "stats"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
